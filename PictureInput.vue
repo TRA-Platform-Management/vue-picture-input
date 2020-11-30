@@ -303,6 +303,7 @@ export default {
         if (prefill) {
           this.$emit('prefill')
         } else {
+          this.$refs.fileInput.files = files
           this.$emit('change', this.image)
         }
       }
